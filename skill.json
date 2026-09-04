@@ -1,0 +1,36 @@
+{
+  "name": "genpark-ros2-micro-telemetry-qos-negotiator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Micro-ROS edge robotics telemetry QoS profile negotiator adapting reliability, durability, and deadline settings to RF constraints.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "edge-robotics",
+  "tags": [
+    "ros2",
+    "micro-ros",
+    "qos-negotiation",
+    "iot-robotics",
+    "embedded-systems"
+  ],
+  "inputs": {
+    "topic_name": {
+      "type": "string"
+    },
+    "network_bandwidth_kbps": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "qos_negotiation_id": {
+      "type": "string"
+    },
+    "selected_reliability": {
+      "type": "string"
+    },
+    "history_depth": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
